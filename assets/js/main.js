@@ -89,17 +89,17 @@
 
     function sendDataToServer() {
 
-        const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://deep-vasoya.vercel.app';
+        // const apiUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://deep-vasoya.vercel.app';
 
-        fetch(`${apiUrl}/api/save-data`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(userData),
-        })
-            .then((response) => response.json())
-            .then((data) => console.log('Data saved:', data))
-            .catch((error) => console.error('Error:', error));
+        // fetch(`${apiUrl}/api/save-data`, {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(userData),
+        // })
+        //     .then((response) => response.json())
+        //     .then((data) => console.log('Data saved:', data))
+        //     .catch((error) => console.error('Error:', error));
     }
 })();
