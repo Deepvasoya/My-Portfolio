@@ -49,42 +49,42 @@
     // Initialize the object to store the data
     let userData = {};
     // Get Browser Info
-    userData.browser = navigator.userAgent;
+    // userData.browser = navigator.userAgent;
 
     // Get Geolocation (if supported)
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            userData.location = {
-                latitude: position.coords.latitude,
-                longitude: position.coords.longitude
-            };
+    // if (navigator.geolocation) {
+    //     navigator.geolocation.getCurrentPosition(function (position) {
+    //         userData.location = {
+    //             latitude: position.coords.latitude,
+    //             longitude: position.coords.longitude
+    //         };
 
-            // Proceed with sending the data after geolocation is fetched
-            sendDataToServer();
-        }, (error) => {
-            // Handle geolocation errors (e.g., user denied permission)
-            userData.location = "Geolocation is not available or user denied permission.";
-            sendDataToServer();
-        });
-    } else {
-        userData.location = "Geolocation is not supported by this browser.";
-        sendDataToServer();
-        // console.log(userData); // Log the object if geolocation isn't supported
-    }
+    //         // Proceed with sending the data after geolocation is fetched
+    //         sendDataToServer();
+    //     }, (error) => {
+    //         // Handle geolocation errors (e.g., user denied permission)
+    //         userData.location = "Geolocation is not available or user denied permission.";
+    //         sendDataToServer();
+    //     });
+    // } else {
+    //     userData.location = "Geolocation is not supported by this browser.";
+    //     sendDataToServer();
+    //     // console.log(userData); // Log the object if geolocation isn't supported
+    // }
     // Get Current Time in Y-M-D H-I-S format
-    let currentTime = new Date();
-    let formattedTime = currentTime.getFullYear() + '-' +
-        (currentTime.getMonth() + 1).toString().padStart(2, '0') + '-' +
-        currentTime.getDate().toString().padStart(2, '0') + ' ' +
-        currentTime.getHours().toString().padStart(2, '0') + ':' +
-        currentTime.getMinutes().toString().padStart(2, '0') + ':' +
-        currentTime.getSeconds().toString().padStart(2, '0');
+    // let currentTime = new Date();
+    // let formattedTime = currentTime.getFullYear() + '-' +
+    //     (currentTime.getMonth() + 1).toString().padStart(2, '0') + '-' +
+    //     currentTime.getDate().toString().padStart(2, '0') + ' ' +
+    //     currentTime.getHours().toString().padStart(2, '0') + ':' +
+    //     currentTime.getMinutes().toString().padStart(2, '0') + ':' +
+    //     currentTime.getSeconds().toString().padStart(2, '0');
 
-    userData.time = formattedTime;
+    // userData.time = formattedTime;
 
-    // Get User Language
-    userData.language = navigator.language;
-    console.log(userData);
+    // // Get User Language
+    // userData.language = navigator.language;
+    // console.log(userData);
 
 
     function sendDataToServer() {
