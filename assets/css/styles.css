@@ -43,6 +43,12 @@
   --border-color: hsl(0, 0%, 87%);
 }
 
+
+/* Sliders */
+
+
+
+
 /*=============== BASE ===============*/
 * {
   margin: 0;
@@ -683,6 +689,10 @@ input[type='checkbox'] {
   background-color: var(--body-color);
   border-color: var(--border-color);
 }
+.services__item .technologyimg {
+  display: block;
+  margin: 0 auto;
+}
 
 .services__icon {
   color: var(--first-color);
@@ -963,11 +973,137 @@ input[type='checkbox'] {
 
 
 
+/*=============== Sliders ===============*/
+.service-slider .slide-arrow.next-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  right: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+}
+
+.service-slider .slide-arrow.prev-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  left: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.service-slider .slide-arrow img{
+  width: 10px;
+}
 
 
+.service-slider .slick-slide img {
+  border-radius: 5px;
+  min-height: auto;
+}
+.service-slider .slick-slide {
+  margin: 0 10px; /* adjust spacing between items */
+}
+
+.service-slider .slick-list {
+  margin: 0 -10px; /* negative margin to balance outer spacing */
+}
 
 
+.skills-slider .slide-arrow.next-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  right: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+}
 
+.skills-slider .slide-arrow.prev-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  left: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.skills-slider .slide-arrow img{
+  width: 10px;
+}
+
+
+.skills-slider .slick-slide img {
+  border-radius: 5px;
+  min-height: auto;
+}
+.skills-slider .slick-slide {
+  margin: 0 10px; /* adjust spacing between items */
+}
+
+.skills-slider .slick-list {
+  margin: 0 -10px; /* negative margin to balance outer spacing */
+}
+
+
+.technology-slider .slide-arrow.next-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  right: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+}
+
+.technology-slider .slide-arrow.prev-arrow.slick-arrow{
+  position: absolute;
+  top: 40%;
+  left: -5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+.technology-slider .slide-arrow img{
+  width: 10px;
+}
+
+
+.technology-slider .slick-slide img {
+  border-radius: 5px;
+  min-height: auto;
+}
+.technology-slider .slick-slide {
+  margin: 0 10px; /* adjust spacing between items */
+}
+
+.technology-slider .slick-list {
+  margin: 0 -10px; /* negative margin to balance outer spacing */
+}
 
 
 
