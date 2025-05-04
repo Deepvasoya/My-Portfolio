@@ -678,7 +678,8 @@ input[type='checkbox'] {
 .services__item {
   background-color: var(--container-color);
   border: 1px solid var(--container-color);
-  padding: 2.5rem 1.8rem;
+  /* padding: 2.5rem 1.8rem; */
+  padding: 0px;
   border-radius: .5rem;
   position: relative;
   transition: all .5rem ease;
@@ -1324,6 +1325,8 @@ input[type='checkbox'] {
   .services__item {
     padding: 2rem 1.5rem;
   }
+
+  
 }
 
 
