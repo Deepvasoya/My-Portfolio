@@ -84,7 +84,7 @@ button {
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  /* color: var(--title-color); */
   font-weight: var(--weight-600);
 }
 
@@ -380,6 +380,12 @@ input[type='checkbox'] {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding-block: 9rem 3rem;
+}
+
+.home__content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 canvas {
@@ -1160,7 +1166,9 @@ canvas {
   }
 
   .home__img {
-    width: 340px;
+    /* width: 340px; */
+    width: 235px;
+    height: 245px;
   }
 
   .about__img-wrapper {
@@ -1260,6 +1268,7 @@ canvas {
     max-width: 560px;
   }
 
+  
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -1291,6 +1300,11 @@ canvas {
 
   .home__img {
     width: 300px;
+  }
+
+  .home__btns {
+    display: block;
+    margin-top: 10px;
   }
 }
 
