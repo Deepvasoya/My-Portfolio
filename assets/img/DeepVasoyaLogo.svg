@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0984e3"/>
+      <stop offset="1" stop-color="#00b894"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#grad1)"/>
+  <text x="50%" y="54%" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="54" font-weight="bold" dy=".35em">DV</text>
+  <text x="50%" y="88%" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" opacity="0.8">Deep Vasoya</text>
+</svg> 
