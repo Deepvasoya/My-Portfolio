@@ -34,6 +34,41 @@
   --weight-600: 600;
 }
 
+@font-face {
+  font-family:__Pacifico_335c89;
+  font-style:normal;
+  font-weight:400;
+  font-display:swap;
+  src:url("../fonts/1b3800ed4c918892-s.p.woff2") format("woff2");
+  unicode-range:u+00??,
+  u+0131,
+  u+0152-0153,
+  u+02bb-02bc,
+  u+02c6,
+  u+02da,
+  u+02dc,
+  u+0304,
+  u+0308,
+  u+0329,
+  u+2000-206f,
+  u+2074,
+  u+20ac,
+  u+2122,
+  u+2191,
+  u+2193,
+  u+2212,
+  u+2215,
+  u+feff,
+  u+fffd
+}
+
+.tracking-wider{
+  font-family: __Pacifico_335c89 !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*=============== DARK THEME ===============*/
 #day-night:checked~* {
   --title-color: hsl(247, 27%, 31%);
@@ -72,6 +107,9 @@ main {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+
+.
+
 
 input,
 textarea,
@@ -200,6 +238,7 @@ input[type='checkbox'] {
 
 .style__switcher-title {
   font-size: var(--larger-font-size);
+ color: var(--first-color);
   margin-bottom: 0.75rem;
 }
 
@@ -373,6 +412,7 @@ input[type='checkbox'] {
 /*=============== HOME ===============*/
 .home {
   background-color: var(--container-color);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%) !important;
   /* padding-block: 9rem 3rem; */
 }
 
@@ -1013,6 +1053,10 @@ canvas {
 
 
 /*=============== Sliders ===============*/
+
+.service-slider{
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%) !important; 
+}
 .service-slider .slide-arrow.next-arrow.slick-arrow{
   position: absolute;
   top: 40%;
@@ -1056,7 +1100,9 @@ canvas {
   margin: 0 -10px; /* negative margin to balance outer spacing */
 }
 
-
+.skills-slider{
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%) !important; 
+}
 .skills-slider .slide-arrow.next-arrow.slick-arrow{
   position: absolute;
   top: 40%;
@@ -1100,7 +1146,12 @@ canvas {
   margin: 0 -10px; /* negative margin to balance outer spacing */
 }
 
-
+.technology, .about {
+  background-color: var(--container-color);
+}
+.technology-slider{
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 30%, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%) !important; 
+}
 .technology-slider .slide-arrow.next-arrow.slick-arrow{
   position: absolute;
   top: 40%;
