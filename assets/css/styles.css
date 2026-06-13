@@ -918,6 +918,75 @@ canvas {
 }
 
 /*=============== TESTIMONIALS ===============*/
+.testimonials {
+  background-color: var(--body-color);
+}
+
+.testimonials__container {
+  max-width: 1200px;
+}
+
+.testimonials__item {
+  padding: 0.5rem;
+}
+
+.testimonials__img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonials__img:hover {
+  border-color: var(--first-color);
+  transform: scale(1.02);
+}
+
+.testimonials-slider {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.testimonials-slider .slide-arrow.next-arrow.slick-arrow {
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+  background-color: var(--container-color);
+  z-index: 2;
+}
+
+.testimonials-slider .slide-arrow.prev-arrow.slick-arrow {
+  position: absolute;
+  top: 40%;
+  left: 0px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #4c27bb;
+  background-color: var(--container-color);
+  z-index: 2;
+  transform: rotate(180deg);
+}
+
+.testimonials-slider .slide-arrow img {
+  width: 10px;
+}
+
+.testimonials-slider .slick-slide {
+  margin: 0 10px;
+}
+
+.testimonials-slider .slick-list {
+  margin: 0 -10px;
+}
 
 /*=============== CONTACT ===============*/
 .contact__container {
