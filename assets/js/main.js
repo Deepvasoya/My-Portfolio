@@ -46,6 +46,26 @@
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
 
+    /**
+     * Animate skill bars on scroll
+     */
+    function animateSkillBars() {
+        let bars = document.querySelectorAll('.skills__percentage');
+        let windowHeight = window.innerHeight;
+        bars.forEach(bar => {
+            let rect = bar.getBoundingClientRect();
+            if (rect.top < windowHeight - 60 && !bar.classList.contains('animated')) {
+                let width = bar.getAttribute('data-width');
+                if (width) {
+                    bar.style.width = width + '%';
+                    bar.classList.add('animated');
+                }
+            }
+        });
+    }
+    window.addEventListener('load', animateSkillBars);
+    document.addEventListener('scroll', animateSkillBars);
+
     // Initialize the object to store the data
     let userData = {};
     // Get Browser Info
