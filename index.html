@@ -456,10 +456,30 @@
     <!--==================== HEADER ====================-->
     <header class="header">
         <nav class="nav container navmenu" role="navigation" aria-label="Main navigation">
-            <a href="index.html" class="nav__logo" aria-label="Deep Vasoya Home Page">
-                <!-- <img src="assets/img/DeepVasoyaLogo.png"
-                    alt="Deep Vasoya Full Stack Developer Logo" style="height: 100px;"> -->
-                <div class="tracking-wider text-xl">deepvasoya</div>
+            <a href="index.html" class="nav__logo" aria-label="Deep Vasoya Home Page" style="display: inline-flex; align-items: center;">
+           <img src="assets/img/dark.png"
+                alt="Deep Vasoya Full Stack Developer Logo" style="height: 70px;" id="logo-dark">
+                <img src="assets/img/light.png"
+                alt="Deep Vasoya Full Stack Developer Logo" style="height: 70px; display: none;" id="logo-light">
+            <span class="tracking-wider text-xl">deepvasoya</span>
+            <script>
+                const dayNight = document.getElementById('day-night');
+                const logoDark = document.getElementById('logo-dark');
+                const logoLight = document.getElementById('logo-light');
+
+                function toggleLogo() {
+                    if (dayNight.checked) {
+                        logoDark.style.display = 'none';
+                        logoLight.style.display = 'inline-block';
+                    } else {
+                        logoDark.style.display = 'inline-block';
+                        logoLight.style.display = 'none';
+                    }
+                }
+
+                dayNight.addEventListener('change', toggleLogo);
+                toggleLogo();
+            </script>
             </a>
 
             <!-- Toggler for Mobile View -->

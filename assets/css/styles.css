@@ -78,7 +78,6 @@
   --border-color: hsl(0, 0%, 87%);
 }
 
-
 /* Sliders */
 
 
@@ -1572,7 +1571,7 @@ canvas {
   .home__img {
     /* width: 340px; */
     width: 235px;
-    height: 245px;
+    height: 290px;
   }
 
   .about__img-wrapper {
