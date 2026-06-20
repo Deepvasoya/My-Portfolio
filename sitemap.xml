@@ -1,42 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://deep-vasoya.vercel.app/</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/deepvasoya.png</image:loc>
+      <image:title>Deep Vasoya – Laravel Certified Full Stack Developer in Ahmedabad, India</image:title>
+      <image:caption>Deep Vasoya – Expert Laravel, Vue.js, Node.js, SaaS and Full Stack Web Developer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/DeepVasoyaLogo.png</image:loc>
+      <image:title>Deep Vasoya Full Stack Developer Logo</image:title>
+      <image:caption>Deep Vasoya – Full Stack Developer and Software Engineer Logo</image:caption>
+    </image:image>
   </url>
+
+  <!-- Services Section -->
   <url>
     <loc>https://deep-vasoya.vercel.app/#services</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- Portfolio / Works Section -->
   <url>
     <loc>https://deep-vasoya.vercel.app/#works</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/portfolio/1.png</image:loc>
+      <image:title>Laravel and Vue.js Web Application Development Project by Deep Vasoya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/portfolio/2.png</image:loc>
+      <image:title>Laravel E-Commerce Platform with Payment Gateway Integration</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/portfolio/3.png</image:loc>
+      <image:title>Mobile-Responsive Website Using Vue.js and Tailwind CSS</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/portfolio/4.png</image:loc>
+      <image:title>SaaS Product Built with Laravel and Angular for Business Data Management</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/portfolio/24.png</image:loc>
+      <image:title>ChildCare Management SaaS Platform built with Laravel</image:title>
+    </image:image>
   </url>
+
+  <!-- About Section -->
   <url>
     <loc>https://deep-vasoya.vercel.app/#about</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+
+  <!-- Testimonials Section -->
   <url>
     <loc>https://deep-vasoya.vercel.app/#testimonials</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/reviews/fiverr-1.png</image:loc>
+      <image:title>Fiverr Client Review for Deep Vasoya – Full Stack Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://deep-vasoya.vercel.app/assets/img/reviews/fiverr-2.png</image:loc>
+      <image:title>Fiverr Client Review – Laravel and Vue.js Development Services</image:title>
+    </image:image>
   </url>
+
+  <!-- Contact Section -->
   <url>
     <loc>https://deep-vasoya.vercel.app/#contact</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
+
 </urlset>

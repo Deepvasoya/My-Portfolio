@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="theme-color" content="#0d1117" />
+
+    <!-- Performance: DNS Prefetch & Preconnect for CDN resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+    <link rel="dns-prefetch" href="https://code.jquery.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- LCP Preload: Prioritize hero image for Core Web Vitals -->
+    <link rel="preload" as="image" href="assets/img/deepvasoya.png" fetchpriority="high">
+
     <meta name="robots" content="index, follow" />
 
     <!-- Primary Meta Tags -->
-    <title>Deep Vasoya – Laravel Certified Full Stack Developer | SaaS, Web & API Solutions</title>
+    <title>Deep Vasoya – Full Stack Developer | Laravel, SaaS & API</title>
 
     <meta name="description"
-        content="Hire Deep Vasoya – a Laravel Certified Full Stack Developer specializing in scalable SaaS platforms, APIs, and business web apps. Expertise in Laravel, Vue.js, Node.js, React & No-Code tools. Delivered 60+ global projects.">
+        content="Hire Deep Vasoya – Laravel Full Stack Developer in India. Expert in SaaS, Vue.js, Node.js, React & APIs. 60+ global projects delivered. Available for hire!">
 
     <meta name="keywords"
         content="Laravel developer India, Full Stack Developer, SaaS development, Vue.js expert, Node.js development, React developer, API development, web app developer, No-Code development, custom software India, scalable web solutions, offshore Laravel developer, backend developer India, hire Laravel expert, SaaS application developer, full stack web developer India, Laravel Vue developer, custom CRM development, cloud-based web apps">
@@ -33,15 +49,17 @@
     <link rel="canonical" href="https://deep-vasoya.vercel.app/" />
     <link rel="alternate" hreflang="en" href="https://deep-vasoya.vercel.app/" />
     <link rel="alternate" hreflang="x-default" href="https://deep-vasoya.vercel.app/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://deep-vasoya.vercel.app/sitemap.xml" />
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Deep Vasoya – Full Stack Developer | SaaS, Web & API Solutions">
     <meta property="og:description"
         content="Hire Deep Vasoya for scalable, custom web applications and SaaS platforms using Laravel, Vue.js, Node.js, and cloud technologies. Helping businesses worldwide build modern, high-performance solutions.">
     <meta property="og:image" content="https://deep-vasoya.vercel.app/assets/img/deepvasoya.png">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="400">
-    <meta property="og:image:alt" content="Deep Vasoya - Laravel Certified Full Stack Developer">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Deep Vasoya – Laravel Certified Full Stack Developer in India">
     <meta property="og:url" content="https://deep-vasoya.vercel.app/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Deep Vasoya - Full Stack Developer">
@@ -56,10 +74,14 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Deep Vasoya – Full Stack Developer | SaaS, Web & API Solutions">
+    <meta name="twitter:site" content="@deepvasoya">
+    <meta name="twitter:creator" content="@deepvasoya">
+    <meta name="twitter:title" content="Deep Vasoya – Laravel Full Stack Developer | SaaS, Web & API Solutions">
     <meta name="twitter:description"
-        content="Deep Vasoya is an expert in Laravel, Vue.js, Node.js, AWS, and scalable software solutions. Offering remote development services to businesses globally.">
+        content="Deep Vasoya is a certified Laravel developer in Ahmedabad, India. Expert in Vue.js, Node.js, AWS & scalable SaaS platforms. 60+ projects delivered globally. Hire now!">
     <meta name="twitter:image" content="https://deep-vasoya.vercel.app/assets/img/deepvasoya.png">
+    <meta name="twitter:image:alt" content="Deep Vasoya – Laravel Certified Full Stack Developer">
+    <meta name="twitter:domain" content="deep-vasoya.vercel.app">
 
 
     <!-- Favicon -->
@@ -70,6 +92,8 @@
     <link rel="icon" type="image/png" sizes="256x256" href="assets/img/favicons/favicon-256x256.png">
     <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#0d1117">
+    <meta name="msapplication-config" content="none">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -84,6 +108,9 @@
     <meta name="apple-mobile-web-app-title" content="Deep Vasoya">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- PWA Web Manifest -->
+    <link rel="manifest" href="site.webmanifest">
 
 
 
@@ -209,7 +236,7 @@
                 "@type": "ContactPoint",
                 "telephone": "+91-9106715543",
                 "contactType": "customer service",
-                "areaServed": "DE",
+                "areaServed": ["IN", "US", "GB", "AU", "CA", "DE", "NZ", "SG"],
                 "availableLanguage": "English"
               },
               "email": "deep.patel8678@gmail.com",
@@ -403,17 +430,140 @@
                 {
                   "@type": "ListItem",
                   "position": 5,
+                  "name": "Testimonials",
+                  "item": "https://deep-vasoya.vercel.app/#testimonials"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
                   "name": "Contact",
                   "item": "https://deep-vasoya.vercel.app/#contact"
                 }
               ]
             }
     </script>
+
+    <!-- FAQPage Schema – Enables Google FAQ Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a typical project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depending on complexity, most projects take 2–8 weeks. A simple landing page can be done in a week, while a full SaaS platform may take 6–10 weeks. I'll give you a timeline after understanding your requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What technologies do you specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I specialize in Laravel, Vue.js, React, Node.js, Python, AI/ML integration, and cloud platforms like AWS. I build scalable web apps, REST APIs, SaaS platforms, and AI-powered solutions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide maintenance after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, I offer ongoing maintenance, bug fixes, feature updates, and performance monitoring. We can set up a monthly retainer or work on an hourly basis depending on your needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you handle pricing and payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I charge based on project scope. After discussing your requirements, I provide a fixed-price quote with clear milestones. Payments are split — typically 50% upfront and 50% on completion via bank transfer, PayPal, or crypto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you integrate AI features into my existing app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. I can add AI chatbots, content generation, intelligent search, or automation using OpenAI, LangChain, and other AI/ML tools — whether building from scratch or enhancing your current platform."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ProfessionalService Schema – Helps rank for service-based searches -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Deep Vasoya – Full Stack Developer",
+      "image": "https://deep-vasoya.vercel.app/assets/img/deepvasoya.png",
+      "url": "https://deep-vasoya.vercel.app/",
+      "telephone": "+91-9106715543",
+      "email": "deep.patel8678@gmail.com",
+      "description": "Professional full stack web development services specializing in Laravel, Vue.js, Node.js, SaaS platforms, e-commerce solutions, and API development. Serving global clients from Ahmedabad, India.",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "postalCode": "380001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.0225,
+        "longitude": 72.5714
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/deepvasoya/",
+        "https://github.com/deepvasoya"
+      ],
+      "areaServed": [
+        {"@type": "Country", "name": "India"},
+        {"@type": "Country", "name": "United States"},
+        {"@type": "Country", "name": "United Kingdom"},
+        {"@type": "Country", "name": "Canada"},
+        {"@type": "Country", "name": "Australia"},
+        {"@type": "Country", "name": "Germany"},
+        {"@type": "Country", "name": "Singapore"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Development Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laravel Development", "description": "Scalable Laravel web applications, REST APIs, and SaaS backends"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SaaS Platform Development", "description": "Multi-tenant SaaS platforms with subscription management built on Laravel and Vue.js"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "E-Commerce Development", "description": "Full-featured e-commerce solutions with Stripe, PayPal, and Razorpay integration"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "API Development & Integration", "description": "RESTful and GraphQL API development with third-party service integrations"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI & Automation Integration", "description": "OpenAI, LangChain and LLM-powered AI features, chatbots and workflow automation"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile App Development", "description": "Cross-platform iOS and Android apps using React Native and Flutter"}}
+        ]
+      }
+    }
+    </script>
 </head>
 
 
-
 <body>
+    <!-- Skip to main content: Accessibility + SEO -->
+    <a href="#main-content" class="skip-to-content" style="position:absolute;top:-100px;left:0;background:#00dfc0;color:#000;padding:8px 16px;z-index:99999;border-radius:0 0 8px 0;font-weight:700;text-decoration:none;transition:top 0.2s;" onfocus="this.style.top='0'" onblur="this.style.top='-100px'">Skip to main content</a>
     <!--==================== STYLE SWITCHER ====================-->
     <input type="radio" name="color" id="color-1" />
     <input type="radio" name="color" id="color-2" />
@@ -511,7 +661,7 @@
 
 
     <!--==================== MAIN ====================-->
-    <main class="main">
+    <main class="main" id="main-content" role="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home">
             <div id="particles-js" aria-hidden="true"></div>
@@ -546,8 +696,9 @@
 
                 <div class="home__img-wrapper">
                     <img src="assets/img/deepvasoya.png"
-                        alt="Deep Vasoya – Laravel Certified Full Stack Developer in India | Expert in Vue, Node.js, No-Code & SaaS Apps"
-                        class="home__img" width="400" height="400" loading="lazy" />
+                        alt="Deep Vasoya – Laravel Certified Full Stack Developer in India | Expert in Vue.js, Node.js, SaaS & API Development"
+                        class="home__img" width="400" height="400"
+                        loading="eager" fetchpriority="high" decoding="async" />
                 </div>
             </div>
         </section>
@@ -1395,11 +1546,11 @@
                         <!-- <a href="https://drive.google.com/file/d/1S-Rj_vSCsmxlXK-hdyxbf-IBeK5pCck5/view?usp=sharing"
                             target="_blank" class="btn">Download CV</a> -->
 
-                        <div class="about__social-links"><a href="https://github.com/Deepvasoya" target="_blank"
-                                class="about__social-link" aria-label="Visit Deep Vasoya GitHub">
+                        <div class="about__social-links"><a href="https://github.com/Deepvasoya" target="_blank" rel="noopener noreferrer"
+                                class="about__social-link" aria-label="Visit Deep Vasoya GitHub Profile">
                                 <i class="fa-brands fa-github"></i>
-                            </a><a href="https://www.linkedin.com/in/deepvasoya/" target="_blank"
-                                class="about__social-link" aria-label="Visit Deep Vasoya LinkedIn">
+                            </a><a href="https://www.linkedin.com/in/deepvasoya/" target="_blank" rel="noopener noreferrer"
+                                class="about__social-link" aria-label="Visit Deep Vasoya LinkedIn Profile">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
@@ -1590,8 +1741,8 @@
 
                         <div>
                             <h3 class="contact__title">WhatsApp Me</h3><span class="contact__data"><a
-                                    href="https://wa.me/919106715543" target="_blank"
-                                    aria-label="WhatsApp Deep Vasoya">+91 9106715543</a>
+                                    href="https://wa.me/919106715543" target="_blank" rel="noopener noreferrer"
+                                    aria-label="WhatsApp Deep Vasoya – Full Stack Developer">+91 9106715543</a>
                             </span>
                         </div>
                     </div>
@@ -1661,7 +1812,7 @@
             <p class="cta__description">Let's build something amazing together. I'm just one message away.</p>
             <div class="cta__btns">
                 <a href="#contact" class="btn cta__btn">Start a Project</a>
-                <a href="https://wa.me/919106715543" target="_blank" class="btn btn--transparent cta__btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                <a href="https://wa.me/919106715543" target="_blank" rel="noopener noreferrer" class="btn btn--transparent cta__btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
             </div>
         </div>
     </section>
@@ -1671,16 +1822,16 @@
         <div class="footer__container container">
             <!-- Copyright Information -->
             <p class="footer__copyright">
-                &copy; 2025 Deep Vasoya. All Rights Reserved.
+                &copy; 2026 Deep Vasoya. All Rights Reserved.
             </p>
 
             <!-- Social Media Links -->
             <div class="footer__social-links">
-                <a href="https://github.com/Deepvasoya" target="_blank"
+                <a href="https://github.com/Deepvasoya" target="_blank" rel="noopener noreferrer"
                     class="footer__social-link" aria-label="Deep Vasoya's GitHub Profile">
                     <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/deepvasoya1999/" target="_blank" class="footer__social-link"
+                <a href="https://www.linkedin.com/in/deepvasoya/" target="_blank" rel="noopener noreferrer" class="footer__social-link"
                     aria-label="Deep Vasoya's LinkedIn Profile">
                     <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                 </a>
@@ -1702,7 +1853,7 @@
     </a>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919106715543" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919106715543" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp – Deep Vasoya Full Stack Developer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -1793,8 +1944,8 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1000,
-                prevArrow: '<button class="slide-arrow prev-arrow"><img src="assets/img/Group948.png" alt=""></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/Group948.png" alt=""></button>',
+                prevArrow: '<button class="slide-arrow prev-arrow" aria-label="Previous slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow" aria-label="Next slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
                 responsive: [
                     {
                         breakpoint: 576,
@@ -1827,8 +1978,8 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 1000,
-                prevArrow: '<button class="slide-arrow prev-arrow"><img src="assets/img/Group948.png" alt=""></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/Group948.png" alt=""></button>',
+                prevArrow: '<button class="slide-arrow prev-arrow" aria-label="Previous slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow" aria-label="Next slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
                 responsive: [
                     {
                         breakpoint: 576,
@@ -1894,8 +2045,8 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                prevArrow: '<button class="slide-arrow prev-arrow"><img src="assets/img/Group948.png" alt=""></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><img src="assets/img/Group948.png" alt=""></button>',
+                prevArrow: '<button class="slide-arrow prev-arrow" aria-label="Previous slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow" aria-label="Next slide"><img src="assets/img/Group948.png" alt="" aria-hidden="true" role="presentation"></button>',
                 responsive: [
                     {
                         breakpoint: 576,
@@ -1955,39 +2106,19 @@
         });
     </script>
 
+    <!-- SiteLinksSearchBox Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Deep Vasoya",
-      "jobTitle": "Full Stack Developer",
+      "@type": "SiteLinksSearchBox",
       "url": "https://deep-vasoya.vercel.app/",
-      "sameAs": [
-        "https://www.linkedin.com/in/deepvasoya/",
-        "https://github.com/deepvasoya"
-      ],
-      "description": "Deep Vasoya is a Full Stack Developer specializing in SaaS, APIs, Laravel, Node.js, Vue.js, PHP, and cloud solutions. Trusted by businesses for reliable software and scalable web applications.",
-      "skills": [
-        "Laravel",
-        "Vue.js",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "MySQL",
-        "REST APIs",
-        "SaaS development",
-        "E-commerce solutions",
-        "Responsive web design"
-      ],
-      "service": "Web Development, SaaS Solutions, E-commerce Development, Custom CMS, Web Application Development, Laravel and Vue.js Expertise",
-      "technology": "Laravel Framework, Vue.js Framework, JavaScript, MySQL, Tailwind CSS, REST APIs, GitHub",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ahmedabad, India",
-        "addressCountry": "DE"
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://deep-vasoya.vercel.app/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
-</script>
+    </script>
 
 
 </body>
